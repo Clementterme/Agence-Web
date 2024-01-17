@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer{
+    font-family: "Open Sans", sans-serif;
+    height: auto;
+    width: 1440px;
+    display: inline-flex;
+    background-color: hsl(192, 100%, 9%);
+    justify-content: space-around;
+    padding: 100px;
+}
+
+
+.contact, .aboutus , .social_media {
+    color: white;
+   
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.adresse{
+    max-width: 460px;
+    display: flex;
+}
+.aboutus{ 
+   display: flex;
+}
+.listAboutUsLeft , .listAboutUsRight{
+    padding: 45px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style: none;
+    text-align: justify;
+}
+
+.adresse::before{
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 30px;
+    margin: 7px 0 0 -25px;
+
+
+    background-image: url(images/icon_location.svg)
+}
+.telephone::before{
+    background-repeat: no-repeat;
+
+    background-image: url(images/icon_phone.svg);
+}
+.email::before{
+    background-repeat: no-repeat;
+    background-image: url(images/icon_email.svg);
+}
+.adresse::before , .telephone::before , .email::before{
+    content: "";
+    background-size: 100%;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    margin: 20px 0 0 -40px;}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    }
+a:hover{
+    text-decoration: underline;
+}
+.lists{
+    margin: 5px;
+    padding: 5px;
+
+}
+.social_media{
+    
+
+
+}
+.social_media_icon{
+    display: flex;
+    margin-top: 70px;
+}
+#facebook , #instagram , #tiwtter {
+    margin: 5px;
+}
+#facebook:hover {
+    background-color: blue;
+    border-radius: 7PX;
+    
+}
+#instagram:hover{
+    background-color: rgb(241, 34, 175);
+    border-radius: 7px;
+    background-position-y:  ;
+}
+#tiwtter:hover {
+
+    background-color: grey;
+    border-radius: 17px;
+}
+.copyRight{
+    padding-top: 95px;
+
+}
