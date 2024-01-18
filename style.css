@@ -1,116 +1,167 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-footer{
-    font-family: "Open Sans", sans-serif;
-    height: auto;
-    width: 1440px;
-    display: inline-flex;
-    background-color: hsl(192, 100%, 9%);
-    justify-content: space-around;
-    padding: 100px;
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  height: auto;
+  width: 1440px;
+  display: flex;
+  background-color: hsl(192, 100%, 9%);
+  justify-content: space-around;
+  padding: 100px;
+  gap: 50px;
+  margin: 0 auto;
 }
 
-
-.contact, .aboutus , .social_media {
-    color: white;
-   
+.contact,
+.aboutus,
+.social_media {
+  color: white;
 }
-.contact{
-    display: flex;
-    flex-direction: column;
-
-
+.contact {
+  display: flex;
+  flex-direction: column;
 }
-.adresse{
-    max-width: 460px;
-    display: flex;
+.adresse {
+  max-width: 460px;
+  display: flex;
 }
-.aboutus{ 
-   display: flex;
+.location{
+    PADDING-RIGHT: 50px;
+    text-align: start;
 }
-.listAboutUsLeft , .listAboutUsRight{
-    padding: 45px;
+.aboutus {
+  display: flex;
+}
+.listAboutUsLeft,
+.listAboutUsRight {
+  padding: 45px;
+}
+.social_media {
+  display: flex;
+  flex-direction: column;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    list-style: none;
-    text-align: justify;
+ul {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  list-style: none;
+  text-align: justify;
 }
 
-.adresse::before{
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 30px;
-    margin: 7px 0 0 -25px;
+.adresse::before {
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 30px;
+  margin: 7px 0 0 -25px;
 
-
-    background-image: url(images/icon_location.svg)
+  background-image: url(images/icon_location.svg);
 }
-.telephone::before{
-    background-repeat: no-repeat;
+.telephone::before {
+  background-repeat: no-repeat;
 
-    background-image: url(images/icon_phone.svg);
+  background-image: url(images/icon_phone.svg);
 }
-.email::before{
-    background-repeat: no-repeat;
-    background-image: url(images/icon_email.svg);
+.email::before {
+  background-repeat: no-repeat;
+  background-image: url(images/icon_email.svg);
 }
-.adresse::before , .telephone::before , .email::before{
-    content: "";
-    background-size: 100%;
-    width: 20px;
-    height: 30px;
-    position: absolute;
-    margin: 20px 0 0 -40px;}
+.adresse::before,
+.telephone::before,
+.email::before {
+  content: "";
+  background-size: 100%;
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  margin: 20px 0 0 -40px;
+}
 
-
-a{
-    color: white;
-    text-decoration: none;
-    }
-a:hover{
-    text-decoration: underline;
+a {
+  color: white;
+  text-decoration: none;
 }
-.lists{
-    margin: 5px;
-    padding: 5px;
-
+a:hover {
+  text-decoration: underline;
 }
-.social_media{
-    
-
-
+.lists {
+  margin: 0px;
+  padding: 5px;
 }
-.social_media_icon{
-    display: flex;
-    margin-top: 70px;
+.social_media {
 }
-#facebook , #instagram , #tiwtter {
-    margin: 5px;
+.social_media_icon {
+  display: flex;
+  margin-top: 70px;
+  GAP: 10px;
+}
+#facebook,
+#instagram,
+#tiwtter {
+  margin: 5px;
 }
 #facebook:hover {
-    background-color: blue;
-    border-radius: 7PX;
-    
+  background-color: blue;
+  border-radius: 7px;
 }
-#instagram:hover{
-    background-color: rgb(241, 34, 175);
-    border-radius: 7px;
-    background-position-y:  ;
+#instagram:hover {
+  background-color: rgb(241, 34, 175);
+  border-radius: 7px;
+  background-position-y: ;
 }
 #tiwtter:hover {
-
-    background-color: grey;
-    border-radius: 17px;
+  background-color: grey;
+  border-radius: 17px;
 }
-.copyRight{
-    padding-top: 110px;
+.copyRight {
+  padding-top: 110px;
+  
+}
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.adresse {
+ 
+  display: flex;
+}
+.listAboutUsLeft,
+.listAboutUsRight {
+  padding: 0px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.social_media {
+    
+    align-items: center;
+}
+.copyRight {
+    padding-top: 0px;
+    padding-right: 35PX;
+    padding-left: 35;
+}
+.location {
+  
+    PADDING-RIGHT: 122px;
+}
+.paragraphCopyRight{
+    PADDING-LEFT: 35px;
+    PADDING-RIGHT: 35px;
+}
 }
