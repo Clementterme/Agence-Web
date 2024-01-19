@@ -123,6 +123,18 @@ a:hover {
   
 }
 
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 10s, opacity 0.5s;
+}
+
 @media screen and (max-width: 768px) {
   footer {
     padding: 10px;
@@ -163,5 +175,17 @@ a:hover {
 .paragraphCopyRight{
     PADDING-LEFT: 35px;
     PADDING-RIGHT: 35px;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 10s, opacity 0.5s;
 }
 }
