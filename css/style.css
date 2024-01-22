@@ -12,7 +12,7 @@ body {
     gap: 40px;
 }
 
-.Titre2 {
+.Titre1 {
     font-size: 30px;
     margin: 0px 0px 15px 0px;
     
@@ -28,17 +28,17 @@ body {
     box-shadow: 0px 0px 15px rgb(173, 170, 170);
     margin: 10px 40px 10px 40px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     
 }
 
 .Grow-together {
-    padding: 0px 90px 0px 115px;
-    
+    padding: 0px 120px 0px 100px; 
 }
 
 .image1{
-    width: 80%;
+    width: 40%;
     padding: 50px 35px 50px 40px;
 }
 
@@ -63,12 +63,12 @@ body {
 }
 
 .Your-users {
-    padding: 0px 65px 0px 115px;
+    padding: 0px 65px 0px 100px;
     
 }
 
 .image3 {
-    width: 80%;
+    width: 40%;
     padding: 50px 35px 50px 50px;
 }
 
@@ -78,23 +78,25 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        padding: 0px 10px 0px 10px;
+        
     }
-
-    .Titre2 {
-        font-size: 20px;
+    .Titre1 {
+        font-size: 16px;
         text-align: center;
     }
     .Paragraphe1 {
-        text-align: center;
+        font-size: 12px;
         color: grey;
-        
+        text-align: center;
     }
     .Grow-together {
-        padding: 20px;
+        padding: 10px 20px 20px 20px;
     }
+    
     .image1 {
- 
-        padding: 20px 20px 0px 20px;
+        width: 100%;
+        padding: 20px;
     }
 
     .contenair3 {
@@ -102,22 +104,25 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        padding: 0px 10px 0px 10px;
+        
     }
     .Titre3 {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
     .Paragraphe3 {
+        font-size: 12px;
         color: grey;
         text-align: center;
     }
     .Your-users {
-        padding: 20px;
+        padding: 10px 20px 20px 20px;
     }
     
     .image3 {
- 
-        padding: 20px 20px 0px 20px;
+        width: 100%;
+        padding: 20px;
     }
 }
 
