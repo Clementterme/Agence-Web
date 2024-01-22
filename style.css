@@ -39,6 +39,30 @@ p {
   font-weight: 400;
 }
 
+.mainfin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(227, 227, 227);
+  gap: 15px;
+  padding: 45px 30px;
+  width: max-content;
+}
+
+button {
+  color: white;
+  background-color: #FF52BF;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 70px;
+  font-size: 14px;
+  box-shadow: 0px 0px 15px rgb(227, 227, 227);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 767px) {
   .main2 {
     flex-direction: column;
@@ -48,5 +72,10 @@ p {
   }
   p {
     text-align: center;
+    font-size: 0.75em;
   }
+
+html {
+  font-size: 0.75em;
+}
 }
