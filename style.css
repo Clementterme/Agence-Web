@@ -1,5 +1,5 @@
-html{
-  margin: 0px 0px ;
+html {
+  margin: 0px 0px;
 }
 
 .main2 {
@@ -8,6 +8,7 @@ html{
   border-radius: 15px;
   box-shadow: 0px 0px 15px rgb(227, 227, 227);
   gap: 20px;
+  padding: 40px 0px;
 }
 
 .body2 {
@@ -17,25 +18,35 @@ html{
 }
 
 .imgbody2 {
-  width: 100%;
+  width: 80%;
 }
 
 .textebody2 {
   width: 80%;
+  padding: 0px 30px;
 }
 
-p{
+h2 {
+  color: #00252e;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+p {
   font-size: 18px;
+  color: #71808e;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
-@media only screen and (max-width: 780px) {
-  .main2{
+@media only screen and (max-width: 767px) {
+  .main2 {
     flex-direction: column;
   }
-  .titrebody2{
+  .titrebody2 {
     text-align: center;
   }
-  p{
+  p {
     text-align: center;
   }
 }
