@@ -1,9 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    width: 1440px;
     font-family: 'Open sans';
-    font-size: 18px;
+    font-size: 14px;
 
 }
 
@@ -13,15 +12,13 @@ body {
     gap: 40px;
 }
 
-.Titre2 {
-    font-size: 40px;
-    font-weight: 700;
+.Titre1 {
+    font-size: 30px;
     margin: 0px 0px 15px 0px;
     
 }
 
 .Paragraphe1 {
-    font-weight: 400;
     color: grey;
     margin: 0;
 }
@@ -31,64 +28,101 @@ body {
     box-shadow: 0px 0px 15px rgb(173, 170, 170);
     margin: 10px 40px 10px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
 
 .Grow-together {
-    width: 60%;
-    padding: 0px 90px 0px 115px;
-    
+    padding: 0px 120px 0px 100px; 
 }
 
-.image {
-    max-width: 40%;
-    padding: 50px 35px 50px 50px;
-    
-}
-
-img {
-    width: 100%;
-    
+.image1{
+    width: 40%;
+    padding: 50px 35px 50px 40px;
 }
 
 .Titre3 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
     margin: 0px 0px 15px 0px;
     
 }
 
 .Paragraphe3 {
-    font-weight: 400;
-    color: grey;
+    color: hsl(0, 0%, 50%);
     margin: 0;
 }
 
 .contenair3 {
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgb(173, 170, 170);
+    box-shadow: 0px 0px 15px hsl(0, 2%, 67%);
     margin: 10px 40px 10px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     
 }
 
 .Your-users {
-    width: 60%;
-    padding: 0px 130px 0px 115px;
+    padding: 0px 65px 0px 100px;
     
 }
 
 .image3 {
-    max-width: 40%;
+    width: 40%;
     padding: 50px 35px 50px 50px;
-    
 }
 
-
+@media screen and (max-width:767px) {
+    .contenair1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px 0px 10px;
+        
+    }
+    .Titre1 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .Paragraphe1 {
+        font-size: 12px;
+        color: grey;
+        text-align: center;
+    }
+    .Grow-together {
+        padding: 10px 20px 20px 20px;
+    }
     
+    .image1 {
+        width: 100%;
+        padding: 20px;
+    }
 
+    .contenair3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px 0px 10px;
+        
+    }
+    .Titre3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .Paragraphe3 {
+        font-size: 12px;
+        color: grey;
+        text-align: center;
+    }
+    .Your-users {
+        padding: 10px 20px 20px 20px;
+    }
+    
+    .image3 {
+        width: 100%;
+        padding: 20px;
+    }
+}
 
