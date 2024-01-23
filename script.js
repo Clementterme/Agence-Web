@@ -1,7 +1,11 @@
-function join_us (){
-    let message = "join us";
-    let para_facebook = document.getElementById('para_facebook');
-    para_facebook.classList.remove('invisible');
-    para_facebook.classList.add('visible');
-    
-} 
+function messageJoinUs (){
+const facebook = Document.getElementById("facebook");
+const joinUsMessage = document.getElementById("joinUsMessage");
+
+facebook.addEventListener("mouseover", () => {
+  joinUsMessage.style.display = "block";
+});
+facebook.addEventListener("mouseout", () => {
+  joinUsMessage.style.display = "none";
+});
+}
