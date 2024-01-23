@@ -1,7 +1,82 @@
-body {
-  margin: 0;
-  padding: 0;
+html {
+  margin: 0px 0px;
 }
+
+.main2 {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(227, 227, 227);
+  gap: 20px;
+  padding: 40px 0px;
+}
+
+.body2 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgbody2 {
+  width: 80%;
+}
+
+.textebody2 {
+  width: 80%;
+  padding: 0px 30px;
+}
+
+h2 {
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  color: #71808e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.mainfin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(227, 227, 227);
+  gap: 15px;
+  padding: 45px 30px;
+  width: max-content;
+}
+
+button {
+  color: white;
+  background-color: #ff52bf;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 70px;
+  font-size: 14px;
+  box-shadow: 0px 0px 15px rgb(227, 227, 227);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+  .main2 {
+    flex-direction: column;
+  }
+  .titrebody2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 0.75em;
+  }
+  html {
+    font-size: 0.75em;
+=======
 
 footer {
   font-family: "Open Sans", sans-serif;
