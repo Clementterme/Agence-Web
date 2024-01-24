@@ -49,6 +49,10 @@ p {
   gap: 15px;
   padding: 45px 30px;
   width: max-content;
+  position: absolute;
+  top: 85%;
+  left: 35%;
+  background-color: white;
 }
 
 button {
@@ -65,21 +69,20 @@ button {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 14px;
-
 }
 
 .general {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
 }
 
 .Titre1 {
   font-size: 30px;
   margin: 0px 0px 15px 0px;
-  
 }
 
 .Paragraphe1 {
@@ -93,18 +96,17 @@ body {
   margin: 10px 40px 10px 40px;
   display: flex;
   align-items: center;
-  
 }
 
 .Grow-together {
-  padding: 0px 120px 0px 100px; 
+  padding: 0px 120px 0px 100px;
 }
 
 .img1 {
-  width: 80%; 
+  width: 80%;
 }
 
-.image1{
+.image1 {
   width: 80%;
   padding: 50px 35px 50px 40px;
 }
@@ -112,7 +114,6 @@ body {
 .Titre3 {
   font-size: 30px;
   margin: 0px 0px 15px 0px;
-  
 }
 
 .Paragraphe3 {
@@ -126,25 +127,19 @@ body {
   margin: 10px 40px 10px 40px;
   display: flex;
   align-items: center;
-  
 }
 
 .Your-users {
   padding: 0px 65px 0px 100px;
-  
 }
 .img3 {
-  width: 80%; 
+  width: 80%;
 }
 
 .image3 {
   width: 80%;
   padding: 50px 35px 50px 50px;
 }
-
-
-
-
 
 @media only screen and (max-width: 767px) {
   .main2 {
@@ -166,53 +161,50 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0px 10px 0px 10px;
-    
-}
-.Titre1 {
+  }
+  .Titre1 {
     font-size: 16px;
     text-align: center;
-}
-.Paragraphe1 {
+  }
+  .Paragraphe1 {
     font-size: 12px;
     color: grey;
     text-align: center;
-}
-.Grow-together {
+  }
+  .Grow-together {
     padding: 10px 20px 20px 20px;
-}
+  }
 
-.image1 {
+  .image1 {
     width: 80%;
     padding: 20px;
-}
+  }
 
-.contenair3 {
+  .contenair3 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     padding: 0px 10px 0px 10px;
-    
-}
-.Titre3 {
+  }
+  .Titre3 {
     font-size: 16px;
     text-align: center;
-}
-.Paragraphe3 {
+  }
+  .Paragraphe3 {
     font-size: 12px;
     color: grey;
     text-align: center;
-}
-.Your-users {
+  }
+  .Your-users {
     padding: 10px 20px 20px 20px;
-}
+  }
 
-.image3 {
+  .image3 {
     width: 80%;
     padding: 20px;
+  }
 }
-}
-
 
 footer {
   font-family: "Open Sans", sans-serif;
@@ -251,7 +243,7 @@ footer {
 .listAboutUsRight {
   padding-top: 45px;
 }
-.listAboutUsLeft{
+.listAboutUsLeft {
   padding-left: 0px;
 }
 .social_media {
@@ -268,7 +260,7 @@ ul {
 
 .adresse::before {
   background-repeat: no-repeat;
-  
+
   margin: 7px 0 0 -25px;
 
   background-image: url(images/icon_location.svg);
@@ -327,21 +319,18 @@ a:hover {
   padding: 10px;
   border-radius: 5px;
 }
-.svgSM{
-  padding: 5px;     
-  display: flex;     
-  justify-content: center;     
-  align-items: center;     
-  border:1px solid rgb(255, 252, 252);     
+.svgSM {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 252, 252);
   border-radius: 100%;
-
 }
-.svgSM:hover{
+.svgSM:hover {
   color: hsl(322, 100%, 66%);
   border-color: hsl(322, 100%, 66%);
- 
 }
-
 
 @media screen and (max-width: 768px) {
   footer {
@@ -374,10 +363,10 @@ a:hover {
     padding-right: 35px;
     padding-left: 35px;
   }
-  
- .lists{
-  padding: 10px;
- }
+
+  .lists {
+    padding: 10px;
+  }
 
   #joinUsMessage {
     display: none;
