@@ -1,0 +1,88 @@
+body{
+    background-image: url(../bg_hero_desktop.svg);
+    background-repeat: no-repeat ;
+}
+.Logo{
+    margin: 10% 36%;
+    width: 80%;
+}
+.ButtonTry {
+    background-color: white;
+    font-weight: 700;
+    border: solid white;
+    box-shadow: 0px 0px 15px rgb(227, 227, 227);
+    border-radius: 14px;
+    height: 30px;
+    width: 68%;
+    margin: 22px 33px;
+}
+.Button1{
+    margin-right: 47px;
+}
+.HeaderBas{
+    display:flex;
+    gap: 5%;
+}
+.Texte{
+    font-family: 'Poppins';
+    width: 39%;
+    margin: 5% 6%;
+}
+.GrandeImage{
+    width: 90%;
+    margin: 8% 7%;
+}
+.ButtonGet{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: solid hsl(322, 100%, 66%);
+    font-weight: 700;
+    box-shadow: 0px 0px 15px rgb(227, 227, 227);
+    border-radius: 14px;
+    height: 36px;
+    width: 46%;
+}
+
+@media only screen and (max-width:767px) {
+    .HeaderBas{
+        flex-direction: column;
+        
+    }
+    .Texte{
+       display: flex;
+       flex-direction: column;
+        width: 80%;
+        TEXT-ALIGN: center;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+.GrandeImage{
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 8%;
+} 
+.ButtonGet{
+    height: 46px;
+    width: 56%;
+    border-radius: 23px;
+}
+.Logo{
+    margin-top: 6%;
+    margin-left: 7%;
+    width:60%;
+}
+.ButtonTry {
+    border-radius: 14px;
+    height: 30px;
+    width: 68%;
+    margin: 12px 38px;
+}
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.Button2{
+    justify-content: center;
+}
