@@ -28,7 +28,6 @@ body {
     box-shadow: 0px 0px 15px rgb(173, 170, 170);
     margin: 10px 40px 10px 40px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     
 }
@@ -37,8 +36,12 @@ body {
     padding: 0px 120px 0px 100px; 
 }
 
+.img1 {
+    width: 80%; 
+}
+
 .image1{
-    width: 40%;
+    width: 80%;
     padding: 50px 35px 50px 40px;
 }
 
@@ -66,9 +69,12 @@ body {
     padding: 0px 65px 0px 100px;
     
 }
+.img3 {
+    width: 80%; 
+}
 
 .image3 {
-    width: 40%;
+    width: 80%;
     padding: 50px 35px 50px 50px;
 }
 
@@ -95,7 +101,7 @@ body {
     }
     
     .image1 {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 
@@ -121,7 +127,7 @@ body {
     }
     
     .image3 {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 }
