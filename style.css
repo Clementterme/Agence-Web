@@ -562,6 +562,7 @@ a:hover {
   right: 0;
   bottom: 0;
   background: rgba(48, 2, 88, 0.447)
+  
 }
 .form_area {
   display: flex;
@@ -574,6 +575,8 @@ a:hover {
   border: 2px solid #264143;
   border-radius: 20px;
   box-shadow: 3px 4px 0px 1px #E99F4C;
+  transform: translate(0% , 0%);
+
 }
 
 .title {
