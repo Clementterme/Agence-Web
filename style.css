@@ -122,6 +122,7 @@ html {
 }
 
 h2 {
+  font-size: 20px;
   color: #00252e;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -179,8 +180,12 @@ body {
 }
 
 .Titre1 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0px 0px 15px 0px;
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
 }
 
 .Paragraphe1 {
@@ -210,8 +215,12 @@ body {
 }
 
 .Titre3 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0px 0px 15px 0px;
+    color: #00252e;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  
 }
 
 .Paragraphe3 {
@@ -537,6 +546,11 @@ a:hover {
   }
 }
 /* Formulair*/
+
+.container {
+  display: none;
+}
+
 #containerFormulair {
   position: absolute;
   top: 50%;
@@ -548,6 +562,14 @@ a:hover {
   text-align: center;
   height: 100%;
   z-index: 1;
+}
+.modal-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(199, 29, 188, 0.447)
 }
 
 .form_area {
@@ -561,6 +583,7 @@ a:hover {
   border: 2px solid #264143;
   border-radius: 20px;
   box-shadow: 3px 4px 0px 1px #e99f4c;
+  transform: translate(0%, 0%);
 }
 
 .title {
