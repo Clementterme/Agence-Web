@@ -29,24 +29,31 @@ veuillez vérifier votre boîte mail pour valider votre inscription.
 * Amusez-vous ! */
 
 
+let detect_theform = document.getElementById("containerFormulair"); // i declare the let out side the function to avoid to redo everytime in every function 
 function afficherLeFormulaire() {
-  let containerFormulair = document.getElementById("containerFormulair");
-  containerFormulair.style.display = "block";
-}
-function cacherLeFormulaire() {
-  document.getElementById('containerFormulair').style.display = "none";
+  detect_theform.style.display = "block";
 }
 
+function cacherLeFormulaire() {
+  detect_theform.style.display = "none";
+}
+
+let messageEnvoyer = document.getElementById("messageEnvoyer");
 function afficheLeMessage() {
-  let messageEnvoyer = document.getElementById("messageEnvoyer");
   messageEnvoyer.style.display = "block";
 
   setTimeout(function () {
     messageEnvoyer.style.display = "none";
   }, 5000);
 }
-const button = document.getElementById('buttonGet');
  
-button.addEventListener('click', function(){
-   button.classList.add("black");
+window.addEventListener('click', function (event) {
+  let closeTheFormOutsideThePopup = document.getElementById("containerFormulair");
+  if (
+    event.target !== closeTheFormOutsideThePopup &&
+    !closeTheFormOutsideThePopup.contains(event.target) &&
+    event.target.id !== "buttonform"
+  ) {
+    closeTheFormOutsideThePopup.style.display = 'none';
+  }
 });

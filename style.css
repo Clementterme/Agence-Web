@@ -132,11 +132,16 @@ h2 {
   font-weight: 600;
 }
 
-p {
+.paragrapheBody {
   font-size: 14px;
   color: #71808e;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+.blockmainfin{
+  display: flex;
+  justify-content: center;
 }
 
 .mainfin {
@@ -148,15 +153,16 @@ p {
   box-shadow: 0px 0px 15px rgb(227, 227, 227);
   padding: 35px 140px;
   width: max-content;
-  position: absolute;
-  top: 694%;
-  left: 35%;
+  /* position: absolute;
+  top: 94%;
+  left: 29%; */
   background-color: white;
+  margin: 0px 0px -70px 0px;
 }
 
 .boutonmainfin {
   color: white;
-  background-color: #ff52bf;
+  background-color: hsl(322, 100%, 66%);
   border-radius: 30px;
   border: none;
   padding: 20px 70px;
@@ -173,14 +179,15 @@ body {
   padding: 0px;
   font-family: "Open sans";
   font-size: 14px;
+  overflow-x: hidden;
 }
 
 .general {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 100px 0px 200px 0px;
-  position: relative;
+  padding: 100px 0px 0px 0px;
+  /* position: relative; */
 }
 
 .Titre1 {
@@ -230,7 +237,7 @@ body {
   margin: 10px 40px 10px 40px;
   display: flex;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
 }
 
 .Your-users {
@@ -252,7 +259,7 @@ body {
   .titrebody2 {
     text-align: center;
   }
-  p {
+  .paragrapheBody {
     text-align: center;
     font-size: 0.75em;
   }
@@ -438,7 +445,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   footer {
-    padding: 10px;
+    padding: 100px;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -483,7 +490,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) and (max-width: 960px) {
   footer {
-    padding: 10px;
+    padding: 100px;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -554,18 +561,28 @@ a:hover {
   height: 100%;
   z-index: 1;
 }
-
+.modal-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(48, 2, 88, 0.447)
+  
+}
 .form_area {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #eddcd9;
+  background-color: #EDDCD9;
   height: auto;
   width: auto;
   border: 2px solid #264143;
   border-radius: 20px;
-  box-shadow: 3px 4px 0px 1px #e99f4c;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  transform: translate(0% , 0%);
+
 }
 
 .title {
@@ -658,3 +675,5 @@ a:hover {
   border-radius: 20px;
   box-shadow: 3px 4px 0px 1px #e99f4c;
 }
+
+
