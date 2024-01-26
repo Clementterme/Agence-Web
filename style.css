@@ -27,10 +27,11 @@ header {
   gap: 5%;
 }
 .Texte {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   width: 39%;
   margin: 5% 6%;
 }
+
 .GrandeImage {
   width: 90%;
   margin: 8% 7%;
