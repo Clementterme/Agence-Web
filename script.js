@@ -45,3 +45,8 @@ function afficheLeMessage() {
     messageEnvoyer.style.display = "none";
   }, 5000);
 }
+const button = document.getElementById('buttonGet');
+ 
+button.addEventListener('click', function(){
+   button.classList.add("black");
+});
