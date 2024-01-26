@@ -16,7 +16,7 @@
   <header id="header">
     <div class="nav">
       <div>
-        <img class="Logo" src="images\logo.svg" alt="Logo" />
+        <img class="Logo" id="logoImagetop" src="images\logo.svg" alt="Logo" />
       </div>
       <div class="Button1">
         <button onclick="afficherLeFormulaire()" id="buttonform" class="ButtonTry">Try It Free</button>
@@ -216,8 +216,8 @@
           <p class="title">Inscrivez Vous</p>
            <form action="">
              <div class="form_group">
-                 <label class="sub_title" for="name">Nom et Prénom</label>
-                 <input required placeholder="Enter your full name" class="form_style" type="text">
+                 <label class="sub_title" for="inputname">Nom et Prénom</label>
+                 <input required placeholder="Enter your full name" class="form_style" id="inputname" type="text">
              </div>
              <div class="form_group">
                  <label class="sub_title" for="email">Votre Email</label>
@@ -231,7 +231,7 @@
               placeholder=" Votre Message"></textarea>
               </div>
              <div id="buttons">
-                 <button onclick="afficheLeMessage()" type="" class="btn">Envoyer</button>
+                 <button id="submitbutton" onclick="afficheLeMessage()" type="" class="btn">Envoyer</button>
                  <button type="reset" class="btn">Supprimer</button>
                </div>
                  <div class="callParaForm">
