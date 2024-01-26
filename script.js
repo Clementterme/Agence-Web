@@ -38,14 +38,14 @@ function cacherLeFormulaire() {
   detect_theform.style.display = "none";
 }
 
-let messageEnvoyer = document.getElementById("messageEnvoyer");
+let messageEnvoyer = document.getElementById('messageEnvoyer');
 function afficheLeMessage() {
   messageEnvoyer.style.display = "block";
 
   setTimeout(function () {
     messageEnvoyer.style.display = "none";
-  }, 5000);
-}
+  }, 5000)
+};
 
 window.addEventListener('click', function (event) {
   let closeTheFormOutsideThePopup = document.getElementById("containerFormulair");
