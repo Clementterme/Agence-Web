@@ -13,10 +13,10 @@ header {
   font-weight: 700;
   border: solid white;
   box-shadow: 0px 0px 15px rgb(227, 227, 227);
-  border-radius: 14px;
-  height: 30px;
-  width: 68%;
-  margin: 22px 33px;
+  border-radius: 30px;
+  padding: 11px;
+  width: 169px;
+  margin: 25px 33px;
   cursor: pointer;
 }
 .Button1 {
@@ -39,14 +39,20 @@ header {
   background-color: hsl(322, 100%, 66%);
   color: white;
   border: solid hsl(322, 100%, 66%);
-  font-weight: 700;
+  font-weight: 600;
   box-shadow: 0px 0px 15px rgb(227, 227, 227);
-  border-radius: 20px;
-  height: 36px;
-  width: 46%;
+  border-radius: 21px;
+  padding: 10px;
+  width:200px;
   cursor: pointer;
 }
-
+.ButtonGet:hover {
+  background-color: hsl(322, 88%, 80%);
+  border: solid hsl(322, 88%, 80%);
+}
+.ButtonTry:hover {
+  color: rgb(160, 159, 159);
+}
 @media only screen and (max-width: 767px) {
   .HeaderBas {
     flex-direction: column;
@@ -57,7 +63,7 @@ header {
     width: 80%;
     text-align: center;
     font-size: 14px;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 
   .GrandeImage {
@@ -66,20 +72,19 @@ header {
     margin-top: 8%;
   }
   .ButtonGet {
-    height: 46px;
-    width: 56%;
-    border-radius: 23px;
+    border-radius: 21px;
+    padding: 10px;
+    width:200px;
   }
   .Logo {
-    margin-top: 6%;
-    margin-left: 7%;
-    width: 60%;
+    margin: 31px 27px;
+    width: 51%;
   }
   .ButtonTry {
-    border-radius: 14px;
-    height: 30px;
-    width: 68%;
-    margin: 12px 38px;
+    border-radius: 21px;
+    padding: 5%;
+    width: 78%;
+    margin: 25px 55px;
   }
 }
 .nav {
@@ -668,7 +673,7 @@ a:hover {
   left: 35%;
   text-align: center;
   max-width: 25%;
-  background-color: #eddcd9;
+  background-color: #f10000;
   border: 2px solid #264143;
   border-radius: 20px;
   box-shadow: 3px 4px 0px 1px #e99f4c;

@@ -38,7 +38,7 @@ function cacherLeFormulaire() {
   detect_theform.style.display = "none";
 }
 
-let messageEnvoyer = document.getElementById("messageEnvoyer");
+let messageEnvoyer = document.getElementById('messageEnvoyer');
 function afficheLeMessage() {
   messageEnvoyer.style.display = "block";
 
@@ -46,7 +46,7 @@ function afficheLeMessage() {
     messageEnvoyer.style.display = "none";
   }, 5000);
 }
-
+ 
 window.addEventListener('click', function (event) {
   let closeTheFormOutsideThePopup = document.getElementById("containerFormulair");
   if (
