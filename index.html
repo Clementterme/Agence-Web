@@ -19,7 +19,7 @@
         <img class="Logo" id="logoImagetop" src="images\logo.svg" alt="Logo" />
       </div>
       <div class="Button1">
-        <button onclick="afficherLeFormulaire()" id="buttonform" class="ButtonTry">Try It Free</button>
+        <button  id="buttonform" class="ButtonTry">Try It Free</button>
       </div>
     </div>
     <div class="HeaderBas">
@@ -31,7 +31,7 @@
           engage in genuine discussion.
         </p>
         <div class="Button2">
-          <button  onclick="afficheLeMessage()" class="ButtonGet">Get Started For Free</button>
+          <button   class="ButtonGet">Get Started For Free</button>
         </div>
       </div>
       <div>
@@ -211,7 +211,7 @@
       <div class="modal-back"></div>
         <div class="form_area">
           <div> 
-            <button onclick="cacherLeFormulaire()"><svg  class="svgCall" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M256 90c44.3 0 86 17.3 117.4 48.6C404.7 170 422 211.7 422 256s-17.3 86-48.6 117.4C342 404.7 300.3 422 256 422s-86-17.3-117.4-48.6C107.3 342 90 300.3 90 256s17.3-86 48.6-117.4C170 107.3 211.7 90 256 90m0-42C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z"></path><path d="M360 330.9L330.9 360 256 285.1 181.1 360 152 330.9l74.9-74.9-74.9-74.9 29.1-29.1 74.9 74.9 74.9-74.9 29.1 29.1-74.9 74.9z"></path></svg></button>
+            <button id="close_the_form"><svg  class="svgCall" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M256 90c44.3 0 86 17.3 117.4 48.6C404.7 170 422 211.7 422 256s-17.3 86-48.6 117.4C342 404.7 300.3 422 256 422s-86-17.3-117.4-48.6C107.3 342 90 300.3 90 256s17.3-86 48.6-117.4C170 107.3 211.7 90 256 90m0-42C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48z"></path><path d="M360 330.9L330.9 360 256 285.1 181.1 360 152 330.9l74.9-74.9-74.9-74.9 29.1-29.1 74.9 74.9 74.9-74.9 29.1 29.1-74.9 74.9z"></path></svg></button>
           </div>
           <p class="title">Inscrivez Vous</p>
            <form action="">
@@ -231,7 +231,8 @@
               placeholder=" Votre Message"></textarea>
               </div>
              <div id="buttons">
-                 <button id="submitbutton" onclick="afficheLeMessage()" type="" class="btn">Envoyer</button>
+                 <button id="submitbutton"  type="submit"  class="btn">Envoyer</button>
+                 <div id="error-message" class="error"></div>
                  <button type="reset" class="btn">Supprimer</button>
                </div>
                  <div class="callParaForm">

@@ -26,34 +26,58 @@ veuillez vérifier votre boîte mail pour valider votre inscription.
 (nombre de caractères minimums, email, ... et message d'erreur correspondant) pas juste les attributs HTML,
  mais bien des vérifications JS, qui vous permettront de personnaliser les messages d'erreurs. 
 * Animez ces messages d'erreurs pour leur apparition et leur disparition (vibrations, flash, ...)
-* Amusez-vous ! */
+* Amusez-vous ! 
 
 
 let detect_theform = document.getElementById("containerFormulair"); // i declare the let out side the function to avoid to redo everytime in every function 
-function afficherLeFormulaire() {
-  detect_theform.style.display = "block";
-}
+*/
 
-function cacherLeFormulaire() {
-  detect_theform.style.display = "none";
-}
+let detect_thebutton = document.getElementById("buttonform"); //detecter le button
+let formulair = document.getElementById('containerFormulair');
 
-let messageEnvoyer = document.getElementById('messageEnvoyer');
-function afficheLeMessage() {
-  messageEnvoyer.style.display = "block";
+let detect_submit = document.getElementById('submitbutton')
+let message = document.getElementById('messageEnvoyer')
 
+let buttonFermer = document.getElementById('close_the_form')
+
+detect_thebutton.addEventListener('click', function afficherLeFormulaire (){
+ 
+  formulair.style.display = "block";
+
+ });
+ 
+ detect_submit.addEventListener('click', function afficheLeMessage (event){
+  event.preventDefault()
+  const isvalidform =validateForm()
+  if (isvalidform== true) {
+    formulair.style.display = 'none'
+  message.style.display = "block"
   setTimeout(function () {
-    messageEnvoyer.style.display = "none";
-  }, 5000)
-};
-
-window.addEventListener('click', function (event) {
-  let closeTheFormOutsideThePopup = document.getElementById("containerFormulair");
-  if (
-    event.target !== closeTheFormOutsideThePopup &&
-    !closeTheFormOutsideThePopup.contains(event.target) &&
-    event.target.id !== "buttonform"
-  ) {
-    closeTheFormOutsideThePopup.style.display = 'none';
+    message.style.display = "none";
+  }, 5000) 
   }
-});
+ } ) ;
+
+ buttonFermer.addEventListener('click', function fermerLeFormulair (){
+
+  formulair.style.display = 'none';
+ });
+ 
+ function validateForm() {
+ let inputname = document.getElementById('inputname');
+ let email = document.getElementById('email');
+ let errorMessage = document.getElementById('error-message');
+
+ if (inputname.value.trim() === '' || email.value.trim() === '') {
+  errorMessage.textContent = 'Name and email are required!';
+  return false; 
+
+} else{
+  return true
+}
+
+errorMessage.textContent = '';
+return true; 
+}
+ 
+ 
