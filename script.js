@@ -53,8 +53,23 @@ detect_thebutton.addEventListener('click', function afficherLeFormulaire (){
     formulair.style.display = 'none'
   message.style.display = "block"
   setTimeout(function () {
+<<<<<<< HEAD
     message.style.display = "none";
   }, 5000) 
+=======
+    messageEnvoyer.style.display = "none";
+  }, 5000);
+}
+ 
+window.addEventListener('click', function (event) {
+  let closeTheFormOutsideThePopup = document.getElementById("containerFormulair");
+  if (
+    event.target !== closeTheFormOutsideThePopup &&
+    !closeTheFormOutsideThePopup.contains(event.target) &&
+    event.target.id !== "buttonform"
+  ) {
+    closeTheFormOutsideThePopup.style.display = 'none';
+>>>>>>> 92348256bf4c455e53a61ff515ffbd7e2ce8da69
   }
  } ) ;
 
