@@ -352,7 +352,7 @@ footer {
   display: flex;
   background-color: hsl(192, 100%, 9%);
   justify-content: space-around;
-  padding: 100px;
+  padding: 150PX 100PX 50PX 100PX;
   gap: 50px;
   margin: 0 auto;
 }
@@ -361,6 +361,7 @@ footer {
 .aboutus,
 .social_media {
   color: white;
+  max-width: 100%;
 }
 .contact {
   display: flex;
@@ -445,7 +446,9 @@ a:hover {
 #tiwtter {
   margin: 5px;
 }
-
+.paragraphCopyRight {
+  font-size: 10px;
+}
 .copyRight {
   padding-top: 110px;
 }
@@ -506,15 +509,7 @@ a:hover {
   .lists {
     padding: 10px;
   }
-
-  #joinUsMessage {
-    display: none;
-    position: absolute;
-    background-color: #e51616;
-    color: #1ae613;
-    padding: 10px;
-    border-radius: 5px;
-  }
+  
  }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
@@ -582,8 +577,8 @@ a:hover {
 
 #containerFormulair {
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 65%;
+  left: 33%;
   display: none;
   align-items: center;
   justify-content: center;
@@ -729,4 +724,60 @@ a:hover {
   background-color: #de1919;
 }
 
+#joinUsMessage {
+  display: none;
+  position: absolute;
+  background-color: #e51616;
+  color: #1ae613;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* mediapour le formulair*/
 
+@media screen and (min-width: 375px) and  (max-width: 430px) {
+#containerFormulair {
+  top: 65%;
+  left: -25%;
+}}
+@media screen and (min-width: 430px) and (max-width: 500px) {
+  #containerFormulair {
+    top: 65%;
+    left: -20%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  #containerFormulair {
+    top: 65%;
+    left: -16%;
+    }
+}
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  #containerFormulair {
+    top: 65%;
+    left: -12%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  #containerFormulair {
+    top: 65%;
+    left: -8%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 710px) {
+  #containerFormulair {
+    top: 65%;
+    left: -4%;
+  }
+}
+@media screen and (min-width: 710px) and (max-width: 768px) {
+  #containerFormulair {
+    top: 65%;
+    left: 0%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  #containerFormulair {
+    top: 65%;
+    left: 11%;
+  }
+}
