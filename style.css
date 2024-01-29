@@ -283,8 +283,14 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+
+
+  .general {
+    padding: 40px 15px 0px 15px;
+  }
   .main2 {
     flex-direction: column;
+    margin:0px;
   }
   .mainfin{
     padding: 30px 30px 40px 30px;
@@ -304,11 +310,14 @@ body {
   html {
     font-size: 0.75em;
   }
+
+
   .contenair1 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin:0px;
     
   }
   .Titre1 {
@@ -329,6 +338,7 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin:0px;
     
   }
   .Titre3 {
