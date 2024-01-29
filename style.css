@@ -525,7 +525,8 @@ a:hover {
     padding: 10px;
     border-radius: 5px;
   }
-}
+ }
+
 @media screen and (min-width: 768px) and (max-width: 960px) {
   footer {
     padding: 100px;
@@ -588,14 +589,11 @@ a:hover {
 }
 /* Formulair*/
 
-.container {
-  display: none;
-}
 
 #containerFormulair {
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 10%;
   display: none;
   align-items: center;
   justify-content: center;
@@ -603,8 +601,10 @@ a:hover {
   text-align: center;
   height: 100%;
   z-index: 1;
+  max-height: 0%;
 }
 .modal-back {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -614,17 +614,21 @@ a:hover {
 }
 
 .form_area {
+  position: absolute; 
+  top: 50%;
+  left: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #EDDCD9;
-  height: auto;
-  width: auto;
+ 
   border: 2px solid #264143;
   border-radius: 20px;
   box-shadow: 3px 4px 0px 1px #e99f4c;
-  transform: translate(0%, 0%);
+  transform: translate(33%, -50%);
+
+  
 }
 
 .title {
@@ -671,16 +675,28 @@ a:hover {
   border-radius: 10px;
   font-weight: 800;
   box-shadow: 3px 3px 0px 0px #e99f4c;
+  cursor: pointer;
 }
 
 .btn:hover {
   opacity: 0.9;
+  background: linear-gradient( 155deg, rgb(235 55 55) 15%, rgb(28 98 255) 65% );
+    background-image: linear-gradient(1deg, rgb(235, 55, 55) 15%, rgb(28, 98, 255) 65%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;;
 }
 
 #buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 .callParaForm {
   display: flex;
@@ -699,6 +715,7 @@ a:hover {
   color: black;
   padding: 5px;
   display: flex;
+  cursor: pointer;
 }
 .svgCall:hover {
   color: hsl(322, 100%, 66%);
@@ -712,10 +729,14 @@ a:hover {
   left: 35%;
   text-align: center;
   max-width: 25%;
-  background-color: #f10000;
-  border: 2px solid #264143;
+  background-color: #0dfd51;
+  border: 2px solid #f90bc6;
   border-radius: 20px;
   box-shadow: 3px 4px 0px 1px #e99f4c;
+}
+
+.error{
+  background-color: #de1919;
 }
 
 
